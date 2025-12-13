@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7f76394-8821-41bd-bff4-0eff09620cf9" name="Changes" comment="">
+    <list default="true" id="d7f76394-8821-41bd-bff4-0eff09620cf9" name="Changes" comment="Игра с багом для преподавателя">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/git/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/git/main.py" afterDir="false" />
@@ -23,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -102,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765208274900</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Игра с багом для преподавателя">
+      <option name="closed" value="true" />
+      <created>1765648298551</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765648298551</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,7 +128,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
     <MESSAGE value="Debugger + git&#10;- создали репозиторий(локально и удалённо) на гите &#10;- проверили как работает дебаггер(узнали как запустить дебаггер, функционал и breakpoints)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debugger + git&#10;- создали репозиторий(локально и удалённо) на гите &#10;- проверили как работает дебаггер(узнали как запустить дебаггер, функционал и breakpoints)" />
+    <MESSAGE value="Игра с багом для преподавателя" />
+    <option name="LAST_COMMIT_MESSAGE" value="Игра с багом для преподавателя" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
