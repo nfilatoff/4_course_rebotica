@@ -1,3 +1,5 @@
+import time
+
 from loguru import logger
 
 logger.info("Программа запущена")
@@ -23,6 +25,7 @@ objects = {
 
 logger.info(f"Загружено объектов: {len(objects)}")
 
+time.sleep(1)
 distance = float(input("Введите расстояние в метрах: "))
 logger.info(f"Введено расстояние: {distance} м")
 
