@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7f76394-8821-41bd-bff4-0eff09620cf9" name="Changes" comment="Программа с объектами с урока. &#10;-Добавлена задержка перед вводом расстояния">
-      <change afterPath="$PROJECT_DIR$/StatTGBOT/main.py" afterDir="false" />
+    <list default="true" id="d7f76394-8821-41bd-bff4-0eff09620cf9" name="Changes" comment="Бот опрос по заданию">
+      <change afterPath="$PROJECT_DIR$/Bug_3/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bug_3/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bug_3/results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bug_3/results231.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatTGBOT/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatTGBOT/bot.2025-12-24_01-16-09_086231.log.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatTGBOT/bot.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StatTGBOT/statopros.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatTGBOT/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/StatTGBOT/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +60,7 @@
     "Python.cpdlc_server.executor": "Run",
     "Python.guess_name.executor": "Debug",
     "Python.hours_m.executor": "Run",
+    "Python.main (1).executor": "Debug",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -64,35 +74,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\4_course_rebotica" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="4_course_rebotica" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StatTGBOT" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatTGBOT/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -174,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766414407288</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Бот опрос по заданию">
+      <option name="closed" value="true" />
+      <created>1766549956844</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1766549956844</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +187,8 @@
     <MESSAGE value="Внедрил логирование в этот проект" />
     <MESSAGE value="Программа с объектами с урока" />
     <MESSAGE value="Программа с объектами с урока. &#10;-Добавлена задержка перед вводом расстояния" />
-    <option name="LAST_COMMIT_MESSAGE" value="Программа с объектами с урока. &#10;-Добавлена задержка перед вводом расстояния" />
+    <MESSAGE value="Бот опрос по заданию" />
+    <option name="LAST_COMMIT_MESSAGE" value="Бот опрос по заданию" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,371 @@
+2026-01-12 11:54:34.409 | DEBUG    | __main__:main:51 - Программа инициализирована
+2026-01-12 11:54:45.758 | DEBUG    | __main__:main:51 - Программа инициализирована
+2026-01-12 11:55:53.926 | DEBUG    | __main__:main:51 - Программа инициализирована
+2026-01-12 11:57:31.050 | DEBUG    | __main__:main:51 - Программа инициализирована
+2026-01-12 11:57:52.401 | DEBUG    | __main__:main:51 - Программа инициализирована
+2026-01-12 11:58:03.506 | INFO     | __main__:main:59 - Пользователь ввёл данные name = Кухня
+2026-01-12 11:58:09.762 | INFO     | __main__:main:63 - Пользователь ввёл данные length = 10.0
+2026-01-12 11:58:13.039 | INFO     | __main__:main:65 - Пользователь ввёл данные width = 5.0
+2026-01-12 11:58:16.516 | INFO     | __main__:main:67 - Пользователь ввёл данные height = 2.5
+2026-01-12 11:58:40.826 | SUCCESS  | __main__:calculate_wall_area:13 - Площадь стен посчитана
+2026-01-12 11:58:40.826 | SUCCESS  | __main__:calculate_ceiling_area:17 - Площадь потолка посчитана
+2026-01-12 11:58:40.826 | SUCCESS  | __main__:calculate_floor_area:21 - Площадь пола посчитана
+2026-01-12 11:58:40.826 | SUCCESS  | __main__:add_room:37 - Комната добавлена
+2026-01-12 11:58:48.508 | DEBUG    | __main__:main:51 - Программа инициализирована
+2026-01-12 11:58:59.758 | INFO     | __main__:main:59 - Пользователь ввёл данные name = кухня
+2026-01-12 11:59:05.796 | INFO     | __main__:main:63 - Пользователь ввёл данные length = 10.0
+2026-01-12 11:59:07.157 | INFO     | __main__:main:65 - Пользователь ввёл данные width = 5.0
+2026-01-12 11:59:09.126 | INFO     | __main__:main:67 - Пользователь ввёл данные height = 2.5
+2026-01-12 11:59:21.481 | SUCCESS  | __main__:calculate_wall_area:13 - Площадь стен посчитана
+2026-01-12 11:59:21.481 | SUCCESS  | __main__:calculate_ceiling_area:17 - Площадь потолка посчитана
+2026-01-12 11:59:21.481 | SUCCESS  | __main__:calculate_floor_area:21 - Площадь пола посчитана
+2026-01-12 11:59:21.481 | SUCCESS  | __main__:add_room:37 - Комната добавлена
+2026-01-12 11:59:55.965 | INFO     | __main__:main:76 - Пользователь ввёл данные wall_cost = 5.0
+2026-01-12 11:59:59.731 | INFO     | __main__:main:78 - Пользователь ввёл данные ceiling_cost = 7.0
+2026-01-12 12:00:07.742 | INFO     | __main__:main:80 - Пользователь ввёл данные floor_cost = 6.0
+2026-01-12 12:00:28.302 | SUCCESS  | __main__:calculate_total_cost:44 - Результат посчитан total_cost = -335.7142857142857
+2026-01-12 12:00:28.306 | INFO     | __main__:main:85 - Открыт файл results.csv
+2026-01-12 12:00:32.933 | SUCCESS  | __main__:calculate_wall_area:13 - Площадь стен посчитана
+2026-01-12 12:00:32.934 | SUCCESS  | __main__:calculate_floor_area:21 - Площадь пола посчитана
+2026-01-12 12:00:32.934 | SUCCESS  | __main__:calculate_ceiling_area:17 - Площадь потолка посчитана
+2026-01-12 12:00:34.364 | SUCCESS  | __main__:<module>:102 - Расчёт стоимости окончен. Программа завершена.
+2026-01-12 12:07:58.192 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:08:06.977 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:08:10.952 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:08:13.665 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:08:15.704 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:08:25.148 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 50.0
+2026-01-12 12:08:25.148 | ERROR    | __main__:<module>:103 - An error has been caught in function '<module>', process 'MainProcess' (30976), thread 'MainThread' (31028):
+Traceback (most recent call last):
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2257, in <module>
+    main()
+    └ <function main at 0x0000024F3562DE40>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2239, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+              │        │   │                          └ False
+              │        │   └ {'port': 62577, 'vm_type': None, 'client': '127.0.0.1', 'server': False, 'DEBUG_RECORD_SOCKET_READS': False, 'multiproc': Fal...
+              │        └ <function PyDB.run at 0x0000024F3562CAE0>
+              └ <__main__.PyDB object at 0x0000024F339EB050>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1550, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+           │    │     │          │               │            │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+           │    │     │          │               └ None
+           │    │     │          └ ''
+           │    │     └ False
+           │    └ <function PyDB._exec at 0x0000024F3562CB80>
+           └ <__main__.PyDB object at 0x0000024F339EB050>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1557, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+    │             │        │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+    │             └ <function execfile at 0x0000024F352FACA0>
+    └ <module '_pydev_bundle.pydev_imports' from 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.1\\plugins\\python...
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+                 │              │              │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              │              └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+                 └ 'import csv\nfrom loguru import logger\n\n\nclass Room:\n    def __init__(self, name, length, width, height):\n        self.n...
+
+> File "F:\4_course_rebotica\Bug_3\main.py", line 103, in <module>
+    good = main()
+           └ <function main at 0x0000024F357505E0>
+
+  File "F:\4_course_rebotica\Bug_3\main.py", line 76, in main
+    apartment.add_room(room)
+    │         │        └ <__main__.Room object at 0x0000024F33DCBAA0>
+    │         └ <function Apartment.add_room at 0x0000024F357504A0>
+    └ <__main__.Apartment object at 0x0000024F35309490>
+
+  File "F:\4_course_rebotica\Bug_3\main.py", line 37, in add_room
+    self.total_wall_area += room.calculate_wall_area()
+    │    │                  │    └ <function Room.calculate_wall_area at 0x0000024F3572D080>
+    │    │                  └ <__main__.Room object at 0x0000024F33DCBAA0>
+    │    └ 0
+    └ <__main__.Apartment object at 0x0000024F35309490>
+
+TypeError: unsupported operand type(s) for +=: 'int' and 'NoneType'
+2026-01-12 12:08:25.171 | CRITICAL | __main__:<module>:107 - Что-то произошло в процессе работы программы.
+2026-01-12 12:08:39.545 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:08:45.261 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:08:46.886 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:08:47.825 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:08:48.946 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:08:54.891 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 50.0
+2026-01-12 12:08:54.891 | ERROR    | __main__:<module>:103 - An error has been caught in function '<module>', process 'MainProcess' (26260), thread 'MainThread' (22284):
+Traceback (most recent call last):
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2257, in <module>
+    main()
+    └ <function main at 0x00000173DFA5DE40>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2239, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+              │        │   │                          └ False
+              │        │   └ {'port': 60421, 'vm_type': None, 'client': '127.0.0.1', 'server': False, 'DEBUG_RECORD_SOCKET_READS': False, 'multiproc': Fal...
+              │        └ <function PyDB.run at 0x00000173DFA5CAE0>
+              └ <__main__.PyDB object at 0x00000173DCA0B050>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1550, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+           │    │     │          │               │            │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+           │    │     │          │               └ None
+           │    │     │          └ ''
+           │    │     └ False
+           │    └ <function PyDB._exec at 0x00000173DFA5CB80>
+           └ <__main__.PyDB object at 0x00000173DCA0B050>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1557, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+    │             │        │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+    │             └ <function execfile at 0x00000173DF72ACA0>
+    └ <module '_pydev_bundle.pydev_imports' from 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.1\\plugins\\python...
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+                 │              │              │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              │              └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+                 └ 'import csv\nfrom loguru import logger\n\n\nclass Room:\n    def __init__(self, name, length, width, height):\n        self.n...
+
+> File "F:\4_course_rebotica\Bug_3\main.py", line 103, in <module>
+    good = main()
+           └ <function main at 0x00000173DFB80720>
+
+  File "F:\4_course_rebotica\Bug_3\main.py", line 76, in main
+    apartment.add_room(room)
+    │         │        └ <__main__.Room object at 0x00000173DF617EC0>
+    │         └ <function Apartment.add_room at 0x00000173DFB805E0>
+    └ <__main__.Apartment object at 0x00000173DFA4D490>
+
+  File "F:\4_course_rebotica\Bug_3\main.py", line 37, in add_room
+    self.total_wall_area += room.calculate_wall_area()
+    │    │                  │    └ <function Room.calculate_wall_area at 0x00000173DFB5D1C0>
+    │    │                  └ <__main__.Room object at 0x00000173DF617EC0>
+    │    └ 0
+    └ <__main__.Apartment object at 0x00000173DFA4D490>
+
+TypeError: unsupported operand type(s) for +=: 'int' and 'NoneType'
+2026-01-12 12:08:54.899 | CRITICAL | __main__:<module>:107 - Что-то произошло в процессе работы программы.
+2026-01-12 12:09:34.646 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:09:44.033 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:09:59.502 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:10:08.827 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:10:15.889 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:10:31.011 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 50.0
+2026-01-12 12:10:31.927 | ERROR    | __main__:<module>:103 - An error has been caught in function '<module>', process 'MainProcess' (31520), thread 'MainThread' (8968):
+Traceback (most recent call last):
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2257, in <module>
+    main()
+    └ <function main at 0x0000015DDCC4DE40>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2239, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+              │        │   │                          └ False
+              │        │   └ {'port': 58621, 'vm_type': None, 'client': '127.0.0.1', 'server': False, 'DEBUG_RECORD_SOCKET_READS': False, 'multiproc': Fal...
+              │        └ <function PyDB.run at 0x0000015DDCC4CAE0>
+              └ <__main__.PyDB object at 0x0000015DDCA6DD30>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1550, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+           │    │     │          │               │            │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+           │    │     │          │               └ None
+           │    │     │          └ ''
+           │    │     └ False
+           │    └ <function PyDB._exec at 0x0000015DDCC4CB80>
+           └ <__main__.PyDB object at 0x0000015DDCA6DD30>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1557, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+    │             │        │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+    │             └ <function execfile at 0x0000015DDC91ACA0>
+    └ <module '_pydev_bundle.pydev_imports' from 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.1\\plugins\\python...
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+                 │              │              │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              │              └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+                 └ 'import csv\nfrom loguru import logger\n\n\nclass Room:\n    def __init__(self, name, length, width, height):\n        self.n...
+
+> File "F:\4_course_rebotica\Bug_3\main.py", line 103, in <module>
+    good = main()
+           └ <function main at 0x0000015DDCD6E160>
+
+  File "F:\4_course_rebotica\Bug_3\main.py", line 76, in main
+    apartment.add_room(room)
+    │         │        └ <__main__.Room object at 0x0000015DDC5A77A0>
+    │         └ <function Apartment.add_room at 0x0000015DDCD6E020>
+    └ <__main__.Apartment object at 0x0000015DDCC3EBD0>
+
+  File "F:\4_course_rebotica\Bug_3\main.py", line 37, in add_room
+    self.total_wall_area += room.calculate_wall_area()
+    │    │                  │    └ <function Room.calculate_wall_area at 0x0000015DDCD4EC00>
+    │    │                  └ <__main__.Room object at 0x0000015DDC5A77A0>
+    │    └ 0
+    └ <__main__.Apartment object at 0x0000015DDCC3EBD0>
+
+TypeError: unsupported operand type(s) for +=: 'int' and 'NoneType'
+2026-01-12 12:10:31.941 | CRITICAL | __main__:<module>:107 - Что-то произошло в процессе работы программы.
+2026-01-12 12:10:55.629 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:11:10.279 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:11:12.221 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:11:15.211 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:11:17.440 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:11:23.789 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 50.0
+2026-01-12 12:11:41.188 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 100.0
+2026-01-12 12:11:44.915 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 100.0
+2026-01-12 12:11:46.882 | SUCCESS  | __main__:add_room:40 - Комната добавлена
+2026-01-12 12:12:04.079 | INFO     | __main__:main:79 - Пользователь ввёл данные wall_cost = 7.0
+2026-01-12 12:12:07.559 | INFO     | __main__:main:81 - Пользователь ввёл данные ceiling_cost = 5.0
+2026-01-12 12:12:12.343 | INFO     | __main__:main:83 - Пользователь ввёл данные floor_cost = 4.0
+2026-01-12 12:12:19.115 | SUCCESS  | __main__:calculate_total_cost:47 - Результат посчитан total_cost = -30.0
+2026-01-12 12:12:28.854 | INFO     | __main__:main:88 - Открыт файл results.csv
+2026-01-12 12:12:33.133 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 50.0
+2026-01-12 12:12:34.942 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 100.0
+2026-01-12 12:12:36.325 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 100.0
+2026-01-12 12:12:43.241 | SUCCESS  | __main__:<module>:105 - Расчёт стоимости окончен. Программа завершена.
+2026-01-12 12:15:15.545 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:16:26.609 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:16:31.818 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:16:32.925 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:16:34.239 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:18:06.298 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 50.0
+2026-01-12 12:18:27.183 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 100.0
+2026-01-12 12:18:27.816 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 100.0
+2026-01-12 12:18:27.816 | SUCCESS  | __main__:add_room:40 - Комната добавлена
+2026-01-12 12:18:35.564 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:18:46.835 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:18:52.107 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:18:56.485 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:19:00.756 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:19:40.333 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 37.5
+2026-01-12 12:19:45.379 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 50.0
+2026-01-12 12:19:48.786 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 50.0
+2026-01-12 12:19:49.577 | SUCCESS  | __main__:add_room:40 - Комната добавлена
+2026-01-12 12:19:59.274 | INFO     | __main__:main:79 - Пользователь ввёл данные wall_cost = 10.0
+2026-01-12 12:20:03.363 | INFO     | __main__:main:81 - Пользователь ввёл данные ceiling_cost = 5.0
+2026-01-12 12:20:05.336 | INFO     | __main__:main:83 - Пользователь ввёл данные floor_cost = 7.0
+2026-01-12 12:20:12.471 | SUCCESS  | __main__:calculate_total_cost:47 - Результат посчитан total_cost = 35.0
+2026-01-12 12:20:16.354 | ERROR    | __main__:<module>:103 - An error has been caught in function '<module>', process 'MainProcess' (32136), thread 'MainThread' (8716):
+Traceback (most recent call last):
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2257, in <module>
+    main()
+    └ <function main at 0x0000022B1CFBDE40>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2239, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+              │        │   │                          └ False
+              │        │   └ {'port': 58532, 'vm_type': None, 'client': '127.0.0.1', 'server': False, 'DEBUG_RECORD_SOCKET_READS': False, 'multiproc': Fal...
+              │        └ <function PyDB.run at 0x0000022B1CFBCAE0>
+              └ <__main__.PyDB object at 0x0000022B1C41B050>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1550, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+           │    │     │          │               │            │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+           │    │     │          │               └ None
+           │    │     │          └ ''
+           │    │     └ False
+           │    └ <function PyDB._exec at 0x0000022B1CFBCB80>
+           └ <__main__.PyDB object at 0x0000022B1C41B050>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1557, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+    │             │        │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+    │             └ <function execfile at 0x0000022B1CC8ACA0>
+    └ <module '_pydev_bundle.pydev_imports' from 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2024.2.1\\plugins\\python...
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.1\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+                 │              │              │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              │              └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              └ 'F:\\4_course_rebotica\\Bug_3\\main.py'
+                 └ 'import csv\nfrom loguru import logger\n\n\nclass Room:\n    def __init__(self, name, length, width, height):\n        self.n...
+
+> File "F:\4_course_rebotica\Bug_3\main.py", line 103, in <module>
+    good = main()
+           └ <function main at 0x0000022B1E0F0720>
+
+  File "F:\4_course_rebotica\Bug_3\main.py", line 87, in main
+    with open('results.csv', mode='w', newline='') as file:
+
+PermissionError: [Errno 13] Permission denied: 'results.csv'
+2026-01-12 12:20:16.366 | CRITICAL | __main__:<module>:107 - Что-то произошло в процессе работы программы.
+2026-01-12 12:20:52.604 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:20:55.104 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:20:56.536 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:20:57.765 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:20:58.434 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:20:58.434 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 37.5
+2026-01-12 12:20:58.434 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 50.0
+2026-01-12 12:20:58.434 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 50.0
+2026-01-12 12:20:58.434 | SUCCESS  | __main__:add_room:40 - Комната добавлена
+2026-01-12 12:21:07.498 | INFO     | __main__:main:79 - Пользователь ввёл данные wall_cost = 10.0
+2026-01-12 12:21:08.165 | INFO     | __main__:main:81 - Пользователь ввёл данные ceiling_cost = 5.0
+2026-01-12 12:21:09.009 | INFO     | __main__:main:83 - Пользователь ввёл данные floor_cost = 4.0
+2026-01-12 12:21:09.010 | SUCCESS  | __main__:calculate_total_cost:47 - Результат посчитан total_cost = 185.0
+2026-01-12 12:21:09.011 | INFO     | __main__:main:88 - Открыт файл results.csv
+2026-01-12 12:21:09.011 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 37.5
+2026-01-12 12:21:09.011 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 50.0
+2026-01-12 12:21:09.012 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 50.0
+2026-01-12 12:21:09.012 | SUCCESS  | __main__:<module>:105 - Расчёт стоимости окончен. Программа завершена.
+2026-01-12 12:25:31.222 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:25:52.357 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:26:03.100 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:26:05.482 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:26:07.159 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:26:07.903 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:26:08.936 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:26:31.048 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 75.0
+2026-01-12 12:26:37.974 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 50.0
+2026-01-12 12:26:40.637 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 50.0
+2026-01-12 12:26:42.700 | SUCCESS  | __main__:add_room:40 - Комната добавлена
+2026-01-12 12:27:00.664 | INFO     | __main__:main:79 - Пользователь ввёл данные wall_cost = 10.0
+2026-01-12 12:27:06.878 | INFO     | __main__:main:81 - Пользователь ввёл данные ceiling_cost = 8.0
+2026-01-12 12:27:10.603 | INFO     | __main__:main:83 - Пользователь ввёл данные floor_cost = 6.0
+2026-01-12 12:27:36.071 | SUCCESS  | __main__:calculate_total_cost:47 - Результат посчитан total_cost = 1056.25
+2026-01-12 12:27:39.580 | INFO     | __main__:main:88 - Открыт файл results.csv
+2026-01-12 12:28:23.693 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 75.0
+2026-01-12 12:28:25.092 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 50.0
+2026-01-12 12:28:25.893 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 50.0
+2026-01-12 12:28:34.146 | SUCCESS  | __main__:<module>:105 - Расчёт стоимости окончен. Программа завершена.
+2026-01-12 12:31:17.868 | DEBUG    | __main__:main:54 - Программа инициализирована
+2026-01-12 12:31:24.703 | INFO     | __main__:main:62 - Пользователь ввёл данные name = кухня
+2026-01-12 12:31:30.584 | INFO     | __main__:main:66 - Пользователь ввёл данные length = 10.0
+2026-01-12 12:31:31.104 | INFO     | __main__:main:68 - Пользователь ввёл данные width = 5.0
+2026-01-12 12:31:32.151 | INFO     | __main__:main:70 - Пользователь ввёл данные height = 2.5
+2026-01-12 12:31:32.151 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 75.0
+2026-01-12 12:31:32.151 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 50.0
+2026-01-12 12:31:32.151 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 50.0
+2026-01-12 12:31:32.151 | SUCCESS  | __main__:add_room:40 - Комната добавлена
+2026-01-12 12:31:39.324 | INFO     | __main__:main:79 - Пользователь ввёл данные wall_cost = 10.0
+2026-01-12 12:31:40.184 | INFO     | __main__:main:81 - Пользователь ввёл данные ceiling_cost = 8.0
+2026-01-12 12:31:40.737 | INFO     | __main__:main:83 - Пользователь ввёл данные floor_cost = 6.0
+2026-01-12 12:31:40.737 | SUCCESS  | __main__:calculate_total_cost:47 - Результат посчитан total_cost = 1450.0
+2026-01-12 12:31:40.738 | INFO     | __main__:main:88 - Открыт файл results.csv
+2026-01-12 12:31:40.738 | SUCCESS  | __main__:calculate_wall_area:14 - Площадь стен посчитана: 75.0
+2026-01-12 12:31:40.738 | SUCCESS  | __main__:calculate_floor_area:24 - Площадь пола посчитана: 50.0
+2026-01-12 12:31:40.738 | SUCCESS  | __main__:calculate_ceiling_area:19 - Площадь потолка посчитана: 50.0
+2026-01-12 12:31:40.738 | SUCCESS  | __main__:<module>:105 - Расчёт стоимости окончен. Программа завершена.
