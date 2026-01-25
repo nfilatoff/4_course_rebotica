@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 import os
 import csv
 from io import StringIO
+from logtail import LogtailHandler
 
 from sqlalchemy import (
     create_engine,
@@ -19,7 +20,9 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-logger.add('bot.log', level='INFO', rotation='1 MB', format='{time:HH:mm:ss} | {level} | {message}')
+logtail_handler = LogtailHandler(source_token="YkqT1YytUcHVULGbxFJCxLxv", host='s1655649.eu-nbg-2.betterstackdata.com')
+#logger.add("bot.log", level="DEBUG", compression='zip', rotation='1 hour', retention='1 week')
+logger.add(logtail_handler, level="DEBUG")
 
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
