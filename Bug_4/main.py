@@ -22,7 +22,7 @@ class TaskManager:
 
     def load_tasks(self):
         if os.path.exists(self.tasks_file):
-            with open(self.tasks_file, mode='r', newline='') as file:
+            with open(self.tasks_file, mode='r', newline='', encoding="cp1251") as file:
                 reader = csv.DictReader(file, delimiter=";")
                 for row in reader:
                     task = Task(
@@ -37,7 +37,7 @@ class TaskManager:
                         self.tasks.append(task)
 
     def save_tasks(self):
-        with open(self.tasks_file, mode='w', newline='') as file:
+        with open(self.tasks_file, mode='w', newline='', encoding="cp1251") as file:
             writer = csv.writer(file, delimiter=";")
             writer.writerow(["Title", "Description", "Importance", "Status"])
             for task in self.tasks:
