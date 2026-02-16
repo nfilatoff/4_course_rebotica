@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7f76394-8821-41bd-bff4-0eff09620cf9" name="Changes" comment="Поддержка отправки логов на betterstack">
-      <change afterPath="$PROJECT_DIR$/Bug_3/results231.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bug_4/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bug_4/task_manager.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatTGBOT/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatTGBOT/bot.2025-12-24_01-16-09_086231.log.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatTGBOT/bot.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatTGBOT/statopros.db" afterDir="false" />
+    <list default="true" id="d7f76394-8821-41bd-bff4-0eff09620cf9" name="Changes" comment="Тестирование приложения &quot;Сравнения сортировки&quot;&#10;- Строка 12: Изменен размер окна на 800х800&#10;- Строка 16 и 28: Изменены привязанные команды&#10;- Строка 49-58: Изменен bubble_sort&#10;- Строка 60-68: Изменен quick_sort&#10;- Строка 75 и 80: Изменен подсчет времени сортировки">
+      <change afterPath="$PROJECT_DIR$/Bug_6/main_telegrambot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bug_3/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Bug_3/results.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +53,7 @@
     "Python.hours_m.executor": "Run",
     "Python.main (1).executor": "Debug",
     "Python.main.executor": "Run",
+    "Python.main_telegrambot.executor": "Run",
     "Python.main_with_gui.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -186,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769353194556</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Тестирование приложения &quot;Сравнения сортировки&quot;&#10;- Строка 12: Изменен размер окна на 800х800&#10;- Строка 16 и 28: Изменены привязанные команды&#10;- Строка 49-58: Изменен bubble_sort&#10;- Строка 60-68: Изменен quick_sort&#10;- Строка 75 и 80: Изменен подсчет времени сортировки">
+      <option name="closed" value="true" />
+      <created>1770651106131</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1770651106131</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +216,8 @@
     <MESSAGE value="Исправление багов в приложении для подсчета стоимости ремонта&#10;- строка 9, неправильный аргумент&#10;- строка 13, добавление подсчета пары стен&#10;- строка 38, изменение подсчета(изменение &quot;-&quot; на &quot;+&quot;&#10;- строка 45, изменение подсчета(&quot;/&quot; на &quot;*&quot;)&#10;- строка 93, правильное подставление данных под хедер" />
     <MESSAGE value="Добавление интерфейса для приложения по рассчету стоимости ремонта" />
     <MESSAGE value="Поддержка отправки логов на betterstack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поддержка отправки логов на betterstack" />
+    <MESSAGE value="Тестирование приложения &quot;Сравнения сортировки&quot;&#10;- Строка 12: Изменен размер окна на 800х800&#10;- Строка 16 и 28: Изменены привязанные команды&#10;- Строка 49-58: Изменен bubble_sort&#10;- Строка 60-68: Изменен quick_sort&#10;- Строка 75 и 80: Изменен подсчет времени сортировки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тестирование приложения &quot;Сравнения сортировки&quot;&#10;- Строка 12: Изменен размер окна на 800х800&#10;- Строка 16 и 28: Изменены привязанные команды&#10;- Строка 49-58: Изменен bubble_sort&#10;- Строка 60-68: Изменен quick_sort&#10;- Строка 75 и 80: Изменен подсчет времени сортировки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
