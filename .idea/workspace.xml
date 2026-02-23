@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7f76394-8821-41bd-bff4-0eff09620cf9" name="Changes" comment="Тестирование приложения &quot;Сравнения сортировки&quot;&#10;- Строка 12: Изменен размер окна на 800х800&#10;- Строка 16 и 28: Изменены привязанные команды&#10;- Строка 49-58: Изменен bubble_sort&#10;- Строка 60-68: Изменен quick_sort&#10;- Строка 75 и 80: Изменен подсчет времени сортировки">
-      <change afterPath="$PROJECT_DIR$/Bug_6/main_telegrambot.py" afterDir="false" />
+    <list default="true" id="d7f76394-8821-41bd-bff4-0eff09620cf9" name="Changes" comment="Исправление ошибок бота Telegram&#10;- Строка 10: Добавлен return&#10;- Строка 26: 2 измененот на 1">
+      <change afterPath="$PROJECT_DIR$/Bug_6/CPython.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bug_6/RPython.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/4_course_rebotica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/4_course_rebotica.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bug_6/main_telegrambot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bug_6/main_telegrambot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,17 +50,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.PyPy.executor": "Run",
     "Python.cpdlc_client.executor": "Run",
     "Python.cpdlc_server.executor": "Run",
     "Python.guess_name.executor": "Debug",
+    "Python.hard.executor": "Debug",
     "Python.hours_m.executor": "Run",
     "Python.main (1).executor": "Debug",
     "Python.main.executor": "Run",
     "Python.main_telegrambot.executor": "Run",
     "Python.main_with_gui.executor": "Run",
+    "Python.sorts.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/4_course_rebotica"
+    "last_opened_file_path": "F:/4_course_rebotica",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,6 +74,31 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\4_course_rebotica" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PyPy" type="PythonConfigurationType" factoryName="Python">
+      <module name="4_course_rebotica" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="PyPy 3.13 (4_course_rebotica)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bug_6/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -188,7 +220,39 @@
       <option name="project" value="LOCAL" />
       <updated>1770651106131</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Версия приложения для телеграм">
+      <option name="closed" value="true" />
+      <created>1771251052994</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1771251052994</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Исправление ошибок бота Telegram&#10;- Строка 14: Добавлен вызов функции menu&#10;- Строка 21: Добавлен вызов функции menu_handler&#10;- Строка 24 и 26: Исправление для корректной работы функции menu_handler&#10;- Строка 37: Убран срез списка&#10;- Строка 47: Парс-мод Markdown изменен на HTML&#10;- Строка 53: Добавлена переменная result&#10;- Строка 54: Переменная &quot;a&quot; заменена на &quot;result&quot;">
+      <option name="closed" value="true" />
+      <created>1771257640144</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1771257640144</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Исправление ошибок бота Telegram&#10;- Строка 53: Форматирование hbold изменено на hcode и изменен словарь при вызове&#10;- Строка 54: Добавлен &quot;code&quot; после Код:">
+      <option name="closed" value="true" />
+      <created>1771257726744</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1771257726744</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Исправление ошибок бота Telegram&#10;- Строка 10: Добавлен return&#10;- Строка 26: 2 измененот на 1">
+      <option name="closed" value="true" />
+      <created>1771257769861</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1771257769861</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +281,11 @@
     <MESSAGE value="Добавление интерфейса для приложения по рассчету стоимости ремонта" />
     <MESSAGE value="Поддержка отправки логов на betterstack" />
     <MESSAGE value="Тестирование приложения &quot;Сравнения сортировки&quot;&#10;- Строка 12: Изменен размер окна на 800х800&#10;- Строка 16 и 28: Изменены привязанные команды&#10;- Строка 49-58: Изменен bubble_sort&#10;- Строка 60-68: Изменен quick_sort&#10;- Строка 75 и 80: Изменен подсчет времени сортировки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тестирование приложения &quot;Сравнения сортировки&quot;&#10;- Строка 12: Изменен размер окна на 800х800&#10;- Строка 16 и 28: Изменены привязанные команды&#10;- Строка 49-58: Изменен bubble_sort&#10;- Строка 60-68: Изменен quick_sort&#10;- Строка 75 и 80: Изменен подсчет времени сортировки" />
+    <MESSAGE value="Версия приложения для телеграм" />
+    <MESSAGE value="Исправление ошибок бота Telegram&#10;- Строка 14: Добавлен вызов функции menu&#10;- Строка 21: Добавлен вызов функции menu_handler&#10;- Строка 24 и 26: Исправление для корректной работы функции menu_handler&#10;- Строка 37: Убран срез списка&#10;- Строка 47: Парс-мод Markdown изменен на HTML&#10;- Строка 53: Добавлена переменная result&#10;- Строка 54: Переменная &quot;a&quot; заменена на &quot;result&quot;" />
+    <MESSAGE value="Исправление ошибок бота Telegram&#10;- Строка 53: Форматирование hbold изменено на hcode и изменен словарь при вызове&#10;- Строка 54: Добавлен &quot;code&quot; после Код:" />
+    <MESSAGE value="Исправление ошибок бота Telegram&#10;- Строка 10: Добавлен return&#10;- Строка 26: 2 измененот на 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправление ошибок бота Telegram&#10;- Строка 10: Добавлен return&#10;- Строка 26: 2 измененот на 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

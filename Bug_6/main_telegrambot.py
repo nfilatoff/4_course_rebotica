@@ -109,8 +109,6 @@ async def process_numbers(message: Message, state: FSMContext):
     try:
         raw = message.text.replace(" ", "")
         numbers = list(map(float, raw.split(",")))
-
-        # если все числа целые — приводим к int
         if sum(numbers) == int(sum(numbers)):
             numbers = list(map(int, numbers))
 
