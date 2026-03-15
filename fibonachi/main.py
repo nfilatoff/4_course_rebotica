@@ -32,10 +32,25 @@ def fibonacci(n):
     return fibonacci(n-1)+fibonacci(n-2)
 
 
+# t = time.perf_counter()
+# #print(fibonacci(20))
+# merge(make_array(5_000), make_array(10_000))
+# print(time.perf_counter()-t)
+
+fibonacci(10)
+# время для 44
 t = time.perf_counter()
-#print(fibonacci(20))
-merge(make_array(5_000), make_array(10_000))
-print(time.perf_counter()-t)
+fibonacci(44)
+t44 = time.perf_counter() - t
+
+# время для 45
+t = time.perf_counter()
+fibonacci(45)
+t45 = time.perf_counter() - t
+
+print("t44 =", t44)
+print("t45 =", t45)
+print("Во сколько раз дольше:", t45 / t44)
 
 
 #merge(a, b)
