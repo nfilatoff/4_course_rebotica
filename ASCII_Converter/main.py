@@ -1,42 +1,63 @@
-import numpy as np
-import pygame as pg
-import cv2
-from numba import njit
-from loguru import logger as log
+import sys
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QPushButton, QLabel,
+    QSlider, QColorDialog, QFileDialog, QVBoxLayout
+)
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QPixmap
 
-class ArtConverter:
-    def __init__(self, path = 'img/151806_87oel2bil.png'):
-        self.path = path
-        pg.init()
-        self.image = self.get_image()
-        log.debug(self.image)
-        self.RES = self.width, self.height = self.image.shape[0], self.image.shape[1]
-        self.screen = pg.display.set_mode(self.RES)
-        self.clock = pg.time.Clock()
 
-    def draw(self):
-        pg.surfarray.blit_array(self.screen, self.image)
-        cv2.imshow('Window', self.cv2_image)
+class MainWindow(QWidget):
+    def __init__(self):
+        super().__init__()
 
-    def get_image(self):
-        self.cv2_image = cv2.imread(self.path)
-        transposed_image = cv2.transpose(self.cv2_image)
-        image = cv2.cvtColor(transposed_image, cv2.COLOR_BGR2GRAY)
-        return image
+        self.setWindowTitle("Art Converter")
+        self.resize(600, 400)
 
-    def draw_converted_image(self):
-        char_indices = self.image // self.ASCII_COEFF
+        self.image_label = QLabel("Здесь будет изображение")
 
-    def run(self):
-        while True:
-            for event in pg.event.get():
-                if event.type == pg.QUIT:
-                    exit()
-            self.draw()
-            pg.display.set_caption(str(self.clock.get_fps()))
-            pg.display.flip()
-            self.clock.tick()
+        self.load_btn = QPushButton("Загрузить фото")
+        self.save_btn = QPushButton("Сохранить фото")
+        self.color_btn = QPushButton("Выбрать цвет")
 
-if __name__ == '__main__':
-    app = ArtConverter()
-    app.run()
+        self.slider = QSlider(Qt.Horizontal)
+        self.slider.setMinimum(1)
+        self.slider.setMaximum(50)
+        self.slider.setValue(12)
+
+        layout = QVBoxLayout()
+        layout.addWidget(self.image_label)
+        layout.addWidget(self.load_btn)
+        layout.addWidget(self.slider)
+        layout.addWidget(self.color_btn)
+        layout.addWidget(self.save_btn)
+
+        self.setLayout(layout)
+
+        self.load_btn.clicked.connect(self.load_image)
+        self.color_btn.clicked.connect(self.choose_color)
+        self.save_btn.clicked.connect(self.save_image)
+
+
+    def load_image(self):
+        file_name, _ = QFileDialog.getOpenFileName(self, "Открыть изображение")
+        if file_name:
+            pixmap = QPixmap(file_name)
+            self.image_label.setPixmap(pixmap.scaled(300, 300, Qt.KeepAspectRatio))
+
+    def choose_color(self):
+        color = QColorDialog.getColor()
+        if color.isValid():
+            print("Цвет:", color.name())
+
+    def save_image(self):
+        file_name, _ = QFileDialog.getSaveFileName(self, "Сохранить изображение")
+        if file_name:
+            print("Сохранено:", file_name)
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec_())
