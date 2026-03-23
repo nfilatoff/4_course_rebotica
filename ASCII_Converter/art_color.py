@@ -5,23 +5,27 @@ from numba import njit
 from loguru import logger as log
 
 class ArtConverter:
-    def __init__(self, path = 'img/151806_87oel2bil.png', font_size=2):
+    def __init__(self, path = 'img/151806_87oel2bil.png', font_size=2, color_level = 64):
         self.path = path
+        self.color_level = color_level
         pg.init()
 
-        self.ASCII_CHARS = ' .",:!;~+-xmo*#W&8@'
+        # self.ASCII_CHARS = ' .",:!;~+-xmo*#W&8@'
+        self.ASCII_CHARS = ' ixzao*MW&8%B@$#'
         self.font_size = font_size
         self.ASCII_COEFF = 255 // (len(self.ASCII_CHARS) - 1)
         self.font = pg.font.SysFont('Consolas', font_size, bold=True)
         self.CHAR_STEP = int(font_size * 0.6)
-        self.RENDERED_ASCII_CHARS = [
-            self.font.render(char, False, 'white')
-            for char in self.ASCII_CHARS
-        ]
+        # self.RENDERED_ASCII_CHARS = [
+        #     self.font.render(char, False, 'white')
+        #     for char in self.ASCII_CHARS
+        # ]
+        self.rgb_image, self.gray_image = self.get_image()
+        self.PALETTE, self.COLOR_COEFF = self.create_palette()
 
-        self.image = self.get_image()
-        log.debug(self.image)
-        self.RES = self.width, self.height = self.image.shape[0], self.image.shape[1]
+        #self.image = self.get_image()
+        log.debug(self.rgb_image)
+        self.RES = self.width, self.height = self.rgb_image.shape[0], self.rgb_image.shape[1]
         self.screen = pg.display.set_mode(self.RES)
         self.clock = pg.time.Clock()
 
@@ -34,18 +38,37 @@ class ArtConverter:
     def get_image(self):
         self.cv2_image = cv2.imread(self.path)
         transposed_image = cv2.transpose(self.cv2_image)
-        image = cv2.cvtColor(transposed_image, cv2.COLOR_BGR2GRAY)
-        return image
+        gray_image = cv2.cvtColor(transposed_image, cv2.COLOR_BGR2GRAY)
+        rgb_image = cv2.cvtColor(transposed_image, cv2.COLOR_BGR2RGB)
+        return rgb_image, gray_image
+        # image = cv2.cvtColor(transposed_image, cv2.COLOR_BGR2GRAY)
+        # return image
+
+    def create_palette(self):
+        colors, color_coeff = np.linspace(0, 255, num=self.color_level, dtype=int, retstep=True)
+        color_palette = [np.array([r, g, b]) for r in colors for g in colors for b in colors]
+        palette = dict.fromkeys(self.ASCII_CHARS, None)
+        color_coeff = int(color_coeff)
+        for char in palette:
+            char_palette = {}
+            for color in color_palette:
+                color_key = tuple(color//color_coeff)
+                char_palette[color_key] = self.font.render(char, False, tuple(color))
+            palette[char] = char_palette
+        return palette, color_coeff
 
     def draw_converted_image(self):
-        char_indices = self.image // self.ASCII_COEFF
+        char_indices = self.gray_image // self.ASCII_COEFF
+        color_indices = self.rgb_image // self.COLOR_COEFF
         # Цикл по пикселям с заданным шагом [cite: 53]
         for x in range(0, self.width, self.CHAR_STEP):
             for y in range(0, self.height, self.CHAR_STEP):
                 char_index = char_indices[x, y]
                 # Если индекс существует, отрисовываем символ на экране [cite: 55]
                 if char_index:
-                    self.screen.blit(self.RENDERED_ASCII_CHARS[char_index], (x, y))
+                    char = self.ASCII_CHARS[char_index]
+                    color = tuple(color_indices[x, y])
+                    self.screen.blit(self.PALETTE[char][color], (x, y))
 
 
     def run(self):
