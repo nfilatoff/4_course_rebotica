@@ -3,31 +3,53 @@ import pygame as pg
 import cv2
 from numba import njit
 from loguru import logger as log
+import os
 
+image = 'img\\151806_87oel2bil.png'
 class ArtConverter:
-    def __init__(self, path = 'img/151806_87oel2bil.png', font_size=2, color_level = 64):
-        self.path = path
+    # def __init__(self, path = image, font_size=2, color_level = 12):
+    #     self.path = path
+    #     self.color_level = color_level
+    #     pg.init()
+        
+    #     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    #     self.path = os.path.join(BASE_DIR, self.path)
+        
+    #     # self.ASCII_CHARS = ' .",:!;~+-xmo*#W&8@'
+    #     self.ASCII_CHARS = ' ixzao*MW&8%B@$#'
+    #     self.font_size = font_size
+    #     self.ASCII_COEFF = 255 // (len(self.ASCII_CHARS) - 1)
+    #     self.font = pg.font.SysFont('Consolas', font_size, bold=True)
+    #     self.CHAR_STEP = int(font_size * 0.6)
+    #     # self.RENDERED_ASCII_CHARS = [
+    #     #     self.font.render(char, False, 'white')
+    #     #     for char in self.ASCII_CHARS
+    #     # ]
+    #     #self.rgb_image, self.gray_image = self.get_image()
+    #     self.PALETTE, self.COLOR_COEFF = self.create_palette()
+    #     self.path = image
+    #     #self.image = self.get_image()
+    #     #log.debug(self.rgb_image)
+    #     self.RES = self.width, self.height = self.rgb_image.shape[0], self.rgb_image.shape[1]
+    #     self.screen = pg.display.set_mode(self.RES)
+    #     self.clock = pg.time.Clock()
+    
+    def __init__(self, font_size=2, color_level=18):
+
         self.color_level = color_level
         pg.init()
 
-        # self.ASCII_CHARS = ' .",:!;~+-xmo*#W&8@'
         self.ASCII_CHARS = ' ixzao*MW&8%B@$#'
         self.font_size = font_size
+
         self.ASCII_COEFF = 255 // (len(self.ASCII_CHARS) - 1)
+
         self.font = pg.font.SysFont('Consolas', font_size, bold=True)
+
         self.CHAR_STEP = int(font_size * 0.6)
-        # self.RENDERED_ASCII_CHARS = [
-        #     self.font.render(char, False, 'white')
-        #     for char in self.ASCII_CHARS
-        # ]
-        self.rgb_image, self.gray_image = self.get_image()
         self.PALETTE, self.COLOR_COEFF = self.create_palette()
 
-        #self.image = self.get_image()
-        log.debug(self.rgb_image)
-        self.RES = self.width, self.height = self.rgb_image.shape[0], self.rgb_image.shape[1]
-        self.screen = pg.display.set_mode(self.RES)
-        self.clock = pg.time.Clock()
+        self.path = None
 
     def draw(self):
         # pg.surfarray.blit_array(self.screen, self.image)
@@ -35,14 +57,34 @@ class ArtConverter:
         self.screen.fill('black')
         self.draw_converted_image()
 
-    def get_image(self):
+    def get_image(self, path=None):
+
+        if path is not None:
+            self.path = path
+
         self.cv2_image = cv2.imread(self.path)
-        transposed_image = cv2.transpose(self.cv2_image)
-        gray_image = cv2.cvtColor(transposed_image, cv2.COLOR_BGR2GRAY)
-        rgb_image = cv2.cvtColor(transposed_image, cv2.COLOR_BGR2RGB)
-        return rgb_image, gray_image
-        # image = cv2.cvtColor(transposed_image, cv2.COLOR_BGR2GRAY)
-        # return image
+
+        if self.cv2_image is None:
+            log.error(f"Не удалось загрузить изображение: {self.path}")
+            raise FileNotFoundError(f"Изображение не найдено: {self.path}")
+
+        #transposed_image = cv2.transpose(self.cv2_image)
+
+        self.gray_image = cv2.cvtColor(
+            self.cv2_image,
+            cv2.COLOR_BGR2GRAY
+        )
+
+        self.rgb_image = cv2.cvtColor(
+            self.cv2_image,
+            cv2.COLOR_BGR2RGB
+        )
+
+        self.height, self.width = self.rgb_image.shape[:2]
+
+        self.screen = pg.Surface((self.width, self.height))
+
+        return self.rgb_image, self.gray_image
 
     def create_palette(self):
         colors, color_coeff = np.linspace(0, 255, num=self.color_level, dtype=int, retstep=True)
@@ -63,12 +105,25 @@ class ArtConverter:
         # Цикл по пикселям с заданным шагом [cite: 53]
         for x in range(0, self.width, self.CHAR_STEP):
             for y in range(0, self.height, self.CHAR_STEP):
-                char_index = char_indices[x, y]
+                char_index = char_indices[y, x]
                 # Если индекс существует, отрисовываем символ на экране [cite: 55]
                 if char_index:
                     char = self.ASCII_CHARS[char_index]
-                    color = tuple(color_indices[x, y])
+                    color = tuple(color_indices[y, x])
                     self.screen.blit(self.PALETTE[char][color], (x, y))
+    
+    def save_ascii_art(self, output_path = 'ascii_art.png'):
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        output_path = os.path.join(
+        base_dir,
+        "img",
+        "ascii_output.png"
+        )
+        self.screen.fill('black')
+
+        self.draw_converted_image()
+        pg.image.save(self.screen, output_path)
+        return output_path
 
 
     def run(self):
